@@ -40,7 +40,7 @@ Options:
                    this assigns the same role to all created users, default:
                    sstk_advisor.
 
-  --port INTEGER   Port number for Splunk REST endpoint.
+  --port INTEGER   Port number for Splunk REST endpoint, default: 8089
   --users INTEGER  The number of users to create, default: 20
   --disablessl     If the Splunk server certificate is self-signed this must
                    be pass to by pass ssl verification
