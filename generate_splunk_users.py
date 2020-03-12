@@ -8,13 +8,13 @@ from faker import Faker
 
 splunk_hostname = os.getenv("SPLUNK_HOSTNAME")
 bearer_token = os.getenv("SPLUNK_TOKEN")
-user_role = 'sstk_advisor'
+user_role = 'user'
 number_of_users = 20
 
 @click.command()
 @click.option('--hostname', default=splunk_hostname, help='The hostname for the splunk instance e.g https://localhost. Can also be set as an environment variable SPLUNK_HOSTNAME.', type=click.STRING)
 @click.option('--token', default=bearer_token, help='The bearer/auth token to use for calling the Splunk endpoint, preferably should be set in the environment as SPLUNK_TOKEN.', type=click.STRING)
-@click.option('--rolename', default=user_role, help='The role to assign to the users, must be an existing role, this assigns the same role to all created users, default: sstk_advisor.', type=click.STRING)
+@click.option('--rolename', default=user_role, help='The role to assign to the users, must be an existing role, this assigns the same role to all created users, default: user.', type=click.STRING)
 @click.option('--port', default='8089', help='Port number for Splunk REST endpoint, default: 8089', type=click.INT)
 @click.option('--users', default=number_of_users, help='The number of users to create, default: 20', type=click.INT)
 @click.option('--disablessl',  is_flag=True, help='If the Splunk server certificate is self-signed this must be passed to bypass ssl verification')

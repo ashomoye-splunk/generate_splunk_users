@@ -38,7 +38,7 @@ Options:
 
   --rolename TEXT  The role to assign to the users, must be an existing role,
                    this assigns the same role to all created users, default:
-                   sstk_advisor.
+                   user.
 
   --port INTEGER   Port number for Splunk REST endpoint, default: 8089
   --users INTEGER  The number of users to create, default: 20
