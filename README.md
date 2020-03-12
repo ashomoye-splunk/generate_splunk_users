@@ -22,8 +22,9 @@ To install
 There's an option to set `SPLUNK_HOSTNAME` and `SPLUNK_TOKEN` environment variables to avoid passing these values everytime the script is run.
 
 ## Usage:
+Once installed can be invoked directly by the command name: `generate_splunk_users`
 ```sh
-    Usage: generate_splunk_users.py [OPTIONS]
+    Usage: generate_splunk_users [OPTIONS]
 
 Options:
   --hostname TEXT  The hostname for the splunk instance e.g https://localhost.

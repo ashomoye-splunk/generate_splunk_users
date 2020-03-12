@@ -8,9 +8,9 @@ setup(
     install_requires=[
         'click', 'requests', 'Faker'
     ],
-    entrypoints = {
-    "console_scripts": [
-        "generate_splunk_users=generate_splunk_users:generate"
+    entry_points = {
+    'console_scripts': [
+        'generate_splunk_users=generate_splunk_users:generate'
         ]
     }
 )
