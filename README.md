@@ -1,4 +1,6 @@
 > Helper Script to generate random users on Splunk assigned to a particular role
+
+
 For now, the only details generated for the users are:
 - `name`* (username)
 - `password`* (required)
